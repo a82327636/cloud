@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="microservice-discovery-eureka:war">
+    <output-path>$PROJECT_DIR$/microservice-discovery-eureka/target</output-path>
+    <root id="archive" name="microservice-discovery-eureka-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="microservice-discovery-eureka:war exploded" />
+    </root>
+  </artifact>
+</component>

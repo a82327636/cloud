@@ -1,0 +1,16 @@
+2019-03-12 10:41:39.151 [http-nio-8001-exec-1] DEBUG com.cloud.config.interceptor.LogTimeInterceptor - 
+执行方法:com.cloud.dao.UserMapper.getOne
+执行sql语句:select t.id,t.username,t.age from auth_user1 t where t.id = 1
+执行sql时间:33ms
+2019-03-12 10:41:50.444 [http-nio-8001-exec-5] DEBUG com.cloud.config.interceptor.LogTimeInterceptor - 
+执行方法:com.cloud.dao.UserMapper.getOne
+执行sql语句:select t.id,t.username,t.age from auth_user1 t where t.id = 2
+执行sql时间:2ms
+2019-03-12 10:43:41.006 [http-nio-8001-exec-1] DEBUG com.cloud.config.interceptor.LogTimeInterceptor - 
+执行方法:com.cloud.dao.UserMapper.getOne
+执行sql语句:select t.id,t.username,t.age from auth_user1 t where t.id = 1
+执行sql时间:6ms
+2019-03-12 10:43:43.573 [http-nio-8001-exec-2] DEBUG com.cloud.config.interceptor.LogTimeInterceptor - 
+执行方法:com.cloud.dao.UserMapper.getOne
+执行sql语句:select t.id,t.username,t.age from auth_user1 t where t.id = 2
+执行sql时间:2ms

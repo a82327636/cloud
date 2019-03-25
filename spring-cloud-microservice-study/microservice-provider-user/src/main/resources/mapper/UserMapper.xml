@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cloud.dao.UserMapper">
+	<sql id="cols">
+		t.id,t.username,t.age
+	</sql>
+	<resultMap type="com.cloud.bean.User" id="UserMap">
+		<result column="id" property="id"/>
+		<result column="username" property="username"/>
+		<result column="age" property="age"/>
+	</resultMap>
+
+	<!-- 查询账户是否统计过 -->
+	<select id="getOne"  parameterType="Integer" resultMap="UserMap">
+	  	select <include refid="cols"/> from auth_user1 t where t.id = #{id}
+	</select>
+
+</mapper>
